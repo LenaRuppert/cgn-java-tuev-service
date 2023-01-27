@@ -40,7 +40,7 @@ public class CarInspectionService {
     }
 
     public boolean checkCar(Car car) {
-        if (hasAirbag(car) && hasFourTires(car) && hasSeatBelt(car) && hasThreeOrFiveTires(car)) {
+        if (hasAirbag(car) && hasFourTires(car) && hasSeatBelt(car) && hasThreeOrFiveDoors(car)) {
             return true;
         } else {
             return false;
