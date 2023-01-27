@@ -34,4 +34,18 @@ public class CarinspectionServiceTest {
         boolean result = carInspectionService1.hasAirbag(carAirbagFalse);
         Assertions.assertEquals(false, result);
     }
+
+    @Test
+    void hasSeatBeltTest(){
+        Car car3= new Car(5, 4, true, true);
+        boolean result = carInspectionService1.hasSeatBelt(car3);
+        Assertions.assertEquals(true, result);
+    }
+
+    @Test
+    void hasNotSeatBeltTest(){
+        Car car4= new Car(5, 4, false, true);
+        boolean result = carInspectionService1.hasSeatBelt(car4);
+        Assertions.assertEquals(false, result);
+    }
 }
