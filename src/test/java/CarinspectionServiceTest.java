@@ -23,15 +23,15 @@ public class CarinspectionServiceTest {
     }
 
     @Test
-    void hasSeatBeltTestTrue(){
-        Car carSeatTrue = new Car(4,4,true,true);
-        boolean result = carInspectionService1.hasSeatBelt(carSeatTrue);
+    void hasSeatAirbagTestTrue(){
+        Car carAirbagTrue = new Car(4,4,true,true);
+        boolean result = carInspectionService1.hasAirbag(carAirbagTrue);
         Assertions.assertEquals(true,result);
     }
     @Test
-    void hasSeatBeltTestFalse() {
-        Car carSeatFalse = new Car(4, 4, false, true);
-        boolean result = carInspectionService1.hasSeatBelt(carSeatFalse);
+    void hasAirbagTestFalse() {
+        Car carAirbagFalse = new Car(4, 4, true, false);
+        boolean result = carInspectionService1.hasAirbag(carAirbagFalse);
         Assertions.assertEquals(false, result);
     }
 }
