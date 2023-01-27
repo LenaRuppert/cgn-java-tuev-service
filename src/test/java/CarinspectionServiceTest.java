@@ -23,7 +23,7 @@ public class CarinspectionServiceTest {
     }
 
     @Test
-    void hasSeatAirbagTestTrue(){
+    void hasAirbagTestTrue(){
         Car carAirbagTrue = new Car(4,4,true,true);
         boolean result = carInspectionService1.hasAirbag(carAirbagTrue);
         Assertions.assertEquals(true,result);
