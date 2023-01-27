@@ -32,7 +32,7 @@ public class CarInspectionService {
     }
 
     public boolean hasThreeOrFiveDoors(Car car) {
-        if (car.getNumberOfTires() == 3 || car.getNumberOfTires() == 5) {
+        if (car.getNumberOfDoors() == 3 || car.getNumberOfDoors() == 5) {
             return true;
         } else {
             return false;
