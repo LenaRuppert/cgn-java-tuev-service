@@ -31,7 +31,7 @@ public class CarInspectionService {
         }
     }
 
-    public boolean hasThreeOrFiveTires(Car car) {
+    public boolean hasThreeOrFiveDoors(Car car) {
         if (car.getNumberOfTires() == 3 || car.getNumberOfTires() == 5) {
             return true;
         } else {

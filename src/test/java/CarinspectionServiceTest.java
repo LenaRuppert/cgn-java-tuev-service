@@ -53,13 +53,13 @@ public class CarinspectionServiceTest {
     @Test
     void hasThreeOrFiveDoors() {
         Car car5 = new Car(5, 5, true, true);
-        boolean result = carInspectionService1.hasThreeOrFiveTires(car5);
+        boolean result = carInspectionService1.hasThreeOrFiveDoors(car5);
         Assertions.assertEquals(true, result);
     }
     @Test
     void hasNotThreeOrFiveDoors() {
         Car car6 = new Car(5, 6, true, true);
-        boolean result = carInspectionService1.hasThreeOrFiveTires(car6);
+        boolean result = carInspectionService1.hasThreeOrFiveDoors(car6);
         Assertions.assertEquals(false, result);
     }
 }
